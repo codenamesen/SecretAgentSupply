@@ -1,0 +1,29 @@
+html{
+  font-size: 18px;              /*Sets the base font size*/
+}
+
+body{
+  background-color: black;      /*Sets the background for color for the entire page*/
+  color: white;                /*Default font colour for the entire page*/
+  font-family: Helvetica;      /*Defaut font size*/
+}
+
+.sitecontainer{
+  display: flex;
+  width: 960px;
+  margin: 0 auto;              /*To keep the container in the middle of the page*/
+  /*align-items: center*/
+  /*border:2px solid red;*/
+}
+
+.sitecontainer .logo{
+  height: 1.5rem;
+  width: auto;
+  padding: 0px;
+  margin: auto 1rem auto 0.5rem;
+}
+
+.sitecontainer .logotext{
+  margin: 0.66rem 0px;
+  font-size: 1rem;
+}
