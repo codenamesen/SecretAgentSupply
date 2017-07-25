@@ -1,29 +1,120 @@
 html{
-  font-size: 18px;              /*Sets the base font size*/
+  font-size: 18px;                         /*Sets the base font size*/
 }
 
 body{
-  background-color: black;      /*Sets the background for color for the entire page*/
-  color: white;                /*Default font colour for the entire page*/
-  font-family: Helvetica;      /*Defaut font size*/
+  background-color: black;                /*Sets the background for color for the entire page*/
+  color: white;                          /*Default font colour for the entire page*/
+  font-family: Helvetica;                /*Defaut font size*/
 }
 
 .sitecontainer{
   display: flex;
   width: 960px;
-  margin: 0 auto;              /*To keep the container in the middle of the page*/
+  /*height: 100%;*/
+  margin: 0 auto;                        /*To keep the container in the middle of the page*/
   /*align-items: center*/
-  /*border:2px solid red;*/
+  border:1px solid red;
 }
 
-.sitecontainer .logo{
+.sitecontainer .logo{                   /*Style the size of logo image and its margin*/
   height: 1.5rem;
   width: auto;
   padding: 0px;
   margin: auto 1rem auto 0.5rem;
 }
 
-.sitecontainer .logotext{
+.sitecontainer .logotext{               /*Styles the text acompanying the logo image*/
   margin: 0.66rem 0px;
   font-size: 1rem;
+}
+
+/*Styhles the main banner image*/
+.mainbanner{
+  height: 25rem;
+  background-image: url("../images/moto.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border:2px solid red;
+}
+
+.mainbanner .sitecontainer .bannertextbox{
+  margin-top: 9rem;
+  background-color: black;
+  padding: 0px;
+  /*width: 20rem;*/
+  /*border:2px solid green;*/
+}
+
+.mainbanner .sitecontainer .bannertextbox .bannertext{
+  margin: 2rem 3rem;
+  width: 20rem;
+  /*border:1px solid green;*/
+}
+
+.mainbanner .sitecontainer .bannertextbox .bannertext span{
+  font-size: 1rem;
+  font-weight: bold;
+  /*border:1px solid red;*/
+}
+
+.mainbanner .sitecontainer .bannertextbox .bannertext p{
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.25rem 0rem 0rem 0rem;
+  padding: 0px;
+  /*border:1px solid red;*/
+}
+
+.navigation{
+  background-color: firebrick;
+}
+
+.navigation .sitecontainer{
+  display: flex;
+  padding: 0.75rem 0rem;
+  justify-content: space-between;
+}
+
+.productgrid{
+  background-color: white;
+}
+
+.productgrid .sitecontainer{
+  display: flex;
+  padding: 3rem 0rem;
+  justify-content: space-between;
+  border: 1px solid green;
+}
+
+.productgrid .sitecontainer .pen, .productgrid .sitecontainer .watch, .productgrid .sitecontainer .glasses{
+  border: 4px solid black;
+  width: 30%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productgrid .sitecontainer .imgcontainer{
+  display: flex;
+  align-items: center;
+  height: 9rem;
+  margin: 2rem 0rem;
+  border: 1px solid red;
+}
+
+.productgrid .sitecontainer .imgcontainer img{
+  width: 9rem;
+  height: auto;
+  border: 2px solid green;
+}
+
+.productgrid .sitecontainer p{
+  background-color: black;
+  margin: 0px;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  text-align: center;
 }
