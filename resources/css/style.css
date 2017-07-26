@@ -10,11 +10,10 @@ body{
 
 .sitecontainer{
   display: flex;
-  width: 960px;
-  /*height: 100%;*/
+  max-width: 960px;
   margin: 0 auto;                        /*To keep the container in the middle of the page*/
-  /*align-items: center*/
-  /*border:1px solid red;*/
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .sitecontainer .logo{                   /*Style the size of logo image and its margin*/
@@ -43,12 +42,13 @@ body{
   margin-top: 9rem;
   background-color: black;
   padding: 0px;
+  /*display: flex;*/
 }
 
 /*Styles the text in the textbox floating over the main banner*/
 .mainbanner .sitecontainer .bannertextbox .bannertext{
   margin: 2rem 3rem;
-  width: 20rem;
+  max-width: 20rem;
 }
 
 /*Styles the small text in the textbox floating over the main banner*/
@@ -68,24 +68,25 @@ body{
 /*Styles the navigation bar background color*/
 .navigation{
   background-color: firebrick;
-}
-
-/*Styles the flex items in the navigation bar*/
-.navigation .sitecontainer{
   display: flex;
   padding: 0.75rem 0rem;
-  justify-content: space-between;
+  /*border: 2px solid green;*/
 }
 
 /*Sets the background colour of the product grid*/
 .productgrid{
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*border: 2px solid red;*/
 }
 
 /*Styles the aignment of the box containing the images and the caption in the product grid (product images)*/
 .productgrid .sitecontainer{
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  /*border: 1px solid green;*/
 }
 
 /*Styles the individula container holding the image and the caption in the product grid*/
@@ -148,4 +149,55 @@ body{
 
 .sitecontainer footer{
   height: 5rem;
+}
+
+@media only screen and (min-width: 769px){
+  .navigation .sitecontainer .tab{
+    display: none;
+  }
+}
+
+/*This section is for the display between mobile and tablets or on a screen having resolution of max-width 768px*/
+
+@media only screen and (max-width: 768px){
+  .navigation .sitecontainer .desk{
+    display: none;
+  }
+
+  .navigation .sitecontainer{
+    justify-content: center;
+  }
+
+  .productgrid .sitecontainer .glasses{
+    display: none;
+  }
+
+  .productgrid .sitecontainer .pen, .productgrid .sitecontainer .watch{
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .mainbanner .sitecontainer .bannertextbox{
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .mainbanner .sitecontainer .bannertextbox .bannertext{
+    margin: 0rem;
+    width: 100%;
+  }
+
+  .mainbanner .sitecontainer .bannertextbox .bannertext span{
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  .mainbanner .sitecontainer .bannertextbox .bannertext p{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.25rem 0rem 0rem 0rem;
+    padding: 0px;
+  }
 }
