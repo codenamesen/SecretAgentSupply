@@ -8,6 +8,7 @@ body{
   font-family: Helvetica;                /*Defaut font size*/
 }
 
+/*This div or container is used to hold all the contents in the webpage and align them at the middle of the body*/
 .sitecontainer{
   display: flex;
   max-width: 960px;
@@ -49,12 +50,11 @@ body{
   margin-top: 9rem;
   background-color: black;
   padding: 0px;
-  /*display: flex;*/
 }
 
 /*Styles the text in the textbox floating over the main banner*/
 .mainbanner .sitecontainer .bannertextbox .bannertext{
-  margin: 2rem 3rem;
+  margin: 2rem 0rem 2rem 3rem;
   max-width: 20rem;
 }
 
@@ -77,7 +77,6 @@ body{
   background-color: firebrick;
   display: flex;
   padding: 0.75rem 0rem;
-  /*border: 2px solid green;*/
 }
 
 /*Sets the background colour of the product grid*/
@@ -86,14 +85,12 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*border: 2px solid red;*/
 }
 
 /*Styles the aignment of the box containing the images and the caption in the product grid (product images)*/
 .productgrid .sitecontainer{
   width: 100%;
   display: flex;
-  /*border: 1px solid green;*/
 }
 
 /*Styles the individula container holding the image and the caption in the product grid*/
@@ -166,15 +163,15 @@ body{
   height: 5rem;
 }
 
-@media only screen and (min-width: 769px){
+/*To hide the word menu in navigation bar when viewed in */
+@media only screen and (min-width: 1025px){
   .navigation .sitecontainer .tab{
     display: none;
   }
 }
 
 /*This section is for the display between mobile and tablets or on a screen having resolution of max-width 768px*/
-
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px){
   .navigation .sitecontainer .desk{
     display: none;
   }
@@ -192,7 +189,8 @@ body{
   }
 }
 
-@media only screen and (max-width: 480px){
+/*This section is for the display between mobile and tablets or on a screen having resolution of max-width 768px*/
+@media only screen and (max-width: 470px){
   .mainbanner .sitecontainer .bannertextbox{
     margin-top: 10rem;
     padding: 1rem 2rem;
