@@ -16,7 +16,14 @@ body{
   flex-grow: 1;
 }
 
-.sitecontainer .logo{                   /*Style the size of logo image and its margin*/
+/*To keep the logo image and the test togeather aligned to the left*/
+#logoimgtxt{
+  justify-content: flex-start;
+}
+
+
+/*Style the size of logo image and its margin*/
+.sitecontainer .logo{
   height: 1.5rem;
   width: auto;
   padding: 0px;
@@ -124,7 +131,7 @@ body{
 
 /*Styles the location and the timings box just below the product grid*/
 .productgrid .sitecontainer .location, .productgrid .sitecontainer .hours{
-  margin: 0rem 0rem 4rem 0rem;
+  margin: 0rem;
   width: 35%;
 }
 
@@ -132,6 +139,7 @@ body{
 .productgrid .sitecontainer .location .caption, .productgrid .sitecontainer .hours .caption{
   background-color: black;
   padding: 1rem 2rem;
+  margin: 0px 0px 5px 0px;
 }
 
 /*Styles the value in the location and the timmings box*/
@@ -139,6 +147,13 @@ body{
   background-color: white;
   color: black;
   text-align: left;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*Space between the last content and footer*/
+#locationhours{
+  margin: 0rem auto 4rem auto;
 }
 
 /*Styles the flexbox of the footer*/
@@ -199,5 +214,36 @@ body{
     font-weight: bold;
     margin: 0.25rem 0rem 0rem 0rem;
     padding: 0px;
+  }
+
+  .mainbanner{
+    height: 15rem;
+  }
+
+  .productgrid .sitecontainer .watch{
+    display: none;
+  }
+
+  .productgrid .sitecontainer .pen{
+    width: 90%;
+  }
+
+  .productgrid .sitecontainer{
+    justify-content: center;
+  }
+
+  #locationhours{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .productgrid .sitecontainer .location, .productgrid .sitecontainer .hours{
+    width: 90%;
+    margin: 0.25rem 0rem;
+  }
+
+  .sitecontainer footer{
+    margin: 0 auto;
   }
 }
